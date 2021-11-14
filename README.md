@@ -19,10 +19,6 @@ Download and launch the executable "OpenSystemQuery.exe". The program is portabl
 # Requirements
 - Windows
 
-# Overview
-<img src="https://github.com/jetspiking/OpenSystemQuery/blob/main/Images/OpenSystemQueryConcept.png?raw=true" width="500">
-<img src="https://github.com/jetspiking/OpenSystemQuery/blob/main/Images/OpenSystemQueryLoading.png?raw=true" width="500">
-
 # Information
 Currently OSQ is only provided as a concept version. The application is still being developed. Currently design patterns are scarcily implemented because I wanted to publish this concept as soon as possible. The user interface and corresponding code quality is currently not up to standards and will be improved in the future.
 
@@ -35,3 +31,9 @@ Bugs can be reported by opening issues. Ideas to include specific information ca
 If you enjoy Open System Query and feel like it's improving your productivity and you want to support me extra, you could consider buying me a drink by navigating to my Buy Me A Coffee account.
 
 <img src="https://github.com/jetspiking/OpenSystemQuery/blob/main/Images/PNG1.png?raw=true">
+
+
+
+# Overview
+<img src="https://github.com/jetspiking/OpenSystemQuery/blob/main/Images/OpenSystemQueryConcept.png?raw=true" width="500">
+<img src="https://github.com/jetspiking/OpenSystemQuery/blob/main/Images/OpenSystemQueryLoading.png?raw=true" width="500">
