@@ -4,6 +4,8 @@
 
 
 <img src="https://github.com/jetspiking/OpenSystemQuery/blob/main/Images/OpenSystemQuery.png?raw=true">
+
+# Open System Query
 Inspect your (Windows) system and view specifications and sensor data.
 
 # Description
