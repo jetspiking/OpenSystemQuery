@@ -31,7 +31,7 @@ The application can be used as a reference on how to use the Windows Management 
 # Contributing
 Bugs can be reported by opening issues. Ideas to include specific information can also be discussed by opening an issue. 
 
-# Thank you for using Open System Query
+# Thank you for using OSQ
 If you enjoy Open System Query and feel like it's improving your productivity and you want to support me extra, you could consider buying me a drink by navigating to my Buy Me A Coffee account.
 
 <img src="https://github.com/jetspiking/OpenSystemQuery/blob/main/Images/PNG1.png?raw=true">
