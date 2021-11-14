@@ -20,7 +20,7 @@ Download and launch the executable "OpenSystemQuery.exe". The program is portabl
 - Windows
 
 # Information
-Currently the application is only provided as a concept version. The application is still being developed, the entire user interface and corresponding code will be rewritten in the future. Currently design patterns are not followed, the code quality for the user interface is currently not up to standards.
+Currently OSQ is only provided as a concept version. The application is still being developed. Currently design patterns are scarcily implemented because I wanted to publish this concept as soon as possible. The user interface and corresponding code quality is currently not up to standards and will be improved in the future.
 
 The application can be used as a reference on how to use the Windows Management Instrumentation for different purposes.
 
