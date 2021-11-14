@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B260FA3-8A48-4656-BD55-BC3673A46F83}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenSystemQuery</RootNamespace>
+    <AssemblyName>OpenSystemQuery</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>OSQIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="InformationManagement\Abstraction\IPropertyData.cs" />
+    <Compile Include="Misc\AppContext.cs" />
+    <Compile Include="LoadingWindow.xaml.cs">
+      <DependentUpon>LoadingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Misc\INotifier.cs" />
+    <Compile Include="Misc\ISystemInteractor.cs" />
+    <Compile Include="Misc\SystemActors.cs" />
+    <Compile Include="Utils\Image.cs" />
+    <Compile Include="ViewModels\IViewModelNotifier.cs" />
+    <Compile Include="ViewModels\SpecificationGroupView.cs" />
+    <Compile Include="Views\ContainerView.cs" />
+    <Compile Include="Views\IViewProvider.cs" />
+    <Compile Include="Views\SystemView.cs" />
+    <Compile Include="Views\ToolBar.cs" />
+    <Page Include="LoadingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InformationManagement\Realization\BatteryInformation.cs" />
+    <Compile Include="InformationManagement\Realization\BiosInformation.cs" />
+    <Compile Include="InformationManagement\Realization\BootConfigurationInformation.cs" />
+    <Compile Include="InformationManagement\Realization\BusInformation.cs" />
+    <Compile Include="InformationManagement\Realization\DiskDriveInformation.cs" />
+    <Compile Include="InformationManagement\Realization\FanInformation.cs" />
+    <Compile Include="InformationManagement\Realization\LogicalDiskInformation.cs" />
+    <Compile Include="InformationManagement\Realization\NetworkAdapterInformation.cs" />
+    <Compile Include="InformationManagement\Realization\PlugAndPlayEntityInformation.cs" />
+    <Compile Include="InformationManagement\Realization\TemperatureProbeInformation.cs" />
+    <Compile Include="InformationManagement\Realization\PhysicalMemoryInformation.cs" />
+    <Compile Include="InformationManagement\Realization\VideoControllerInformation.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InformationManagement\Abstraction\AbstractPropertyData.cs" />
+    <Compile Include="InformationManagement\Abstraction\IPropertyProvider.cs" />
+    <Compile Include="InformationManagement\Abstraction\PropertyProvider.cs" />
+    <Compile Include="InformationManagement\Abstraction\Updatable.cs" />
+    <Compile Include="InformationManagement\Abstraction\IUpdatable.cs" />
+    <Compile Include="InformationManagement\Realization\BaseBoardInformation.cs" />
+    <Compile Include="InformationManagement\Realization\OperatingSystemInformation.cs" />
+    <Compile Include="InformationManagement\Realization\ProcessInformation.cs" />
+    <Compile Include="InformationManagement\Realization\ProcessorInformation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\PrintView.png" />
+    <Resource Include="Resources\Icons\Colorize.png" />
+    <Resource Include="Resources\Icons\AddCategory.png" />
+    <Resource Include="Resources\Icons\UpFolder.png" />
+    <Resource Include="Resources\Icons\AddFile.png" />
+    <Resource Include="Resources\Icons\AnnotationsHelp.png" />
+    <Resource Include="Resources\Icons\AnnotationsInfo.png" />
+    <Resource Include="Resources\Icons\AnnotationsWarning.png" />
+    <Resource Include="Resources\Icons\ArrowReturnLeftBlue.png" />
+    <Resource Include="Resources\Icons\ArrowReturnRightBlue.png" />
+    <Resource Include="Resources\Icons\RefreshArrowBlue.png" />
+    <Resource Include="Resources\Icons\RefreshArrowGreen.png" />
+    <Resource Include="Resources\Icons\FullView.png" />
+    <Resource Include="Resources\Icons\Edit.png" />
+    <Resource Include="Resources\Icons\QuestionRed.png" />
+    <Resource Include="Resources\Icons\QuestionBlue.png" />
+    <Resource Include="Resources\Icons\GetPermission.png" />
+    <Resource Include="Resources\Icons\ZoomOut.png" />
+    <Resource Include="Resources\Icons\ZoomIn.png" />
+    <Resource Include="Resources\Icons\Close.png" />
+    <Resource Include="Resources\Icons\Options.png" />
+    <Resource Include="Resources\Icons\Delete.png" />
+    <Resource Include="Resources\Icons\OverlayAudio.png" />
+    <Resource Include="Resources\Icons\OverlayShare.png" />
+    <Resource Include="Resources\Icons\PendingRequest.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="OSQIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\OpenSystemQueryDark.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

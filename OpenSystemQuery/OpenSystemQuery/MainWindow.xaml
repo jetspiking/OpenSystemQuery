@@ -1,0 +1,39 @@
+﻿<Window x:Class="OpenSystemQuery.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Width="800" Height="600">
+    <DockPanel>
+        <StackPanel x:Name="XAML_TopBar" DockPanel.Dock="Top" Orientation="Vertical">
+            <Menu x:Name="XAML_OSQMenu" DockPanel.Dock="Top" HorizontalAlignment="Left">
+                <MenuItem Header="File">
+                    <MenuItem Click="RefreshItem_Click" Header="Refresh"/>
+                    <Separator/>
+                    <MenuItem Click="ExitItem_Click" Header="Exit"/>
+                </MenuItem>
+
+                <MenuItem Header="View">
+                    <MenuItem Click="SystemItem_Click" Header="System"/>
+                    <MenuItem Click="ProcessorItem_Click"  Header="Processor"/>
+                    <MenuItem Click="BaseBoardItem_Click" Header="Motherboard"/>
+                    <MenuItem Click="MemoryItem_Click" Header="Memory"/>
+                    <MenuItem Click="BusItem_Click"  Header="Bus"/>
+                    <MenuItem Click="GraphicsItem_Click" Header="Graphics"/>
+                    <MenuItem Click="PNPItem_Click" Header="PnPEntities"/>
+                    <MenuItem Click="DiskDrivesItem_Click" Header="Drives"/>
+                    <MenuItem Click="FanItem_Click" Header="Fans"/>
+                    <MenuItem Click="ProcessesItem_Click" Header="Processes"/>
+                </MenuItem>
+            </Menu>
+            
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <ScrollViewer x:Name="XAML_SystemBox" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible">
+
+            </ScrollViewer>
+            <ScrollViewer x:Name="XAML_ContainerBox" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible">
+
+            </ScrollViewer>
+        </StackPanel>
+    </DockPanel>
+</Window>
