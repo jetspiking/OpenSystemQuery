@@ -25,6 +25,8 @@ Currently OSQ is only provided as a concept version. The application is still be
 The application can be used as a reference on how to use the Windows Management Instrumentation for different purposes.
 
 # Overview
+After querying the Windows Management Instrumentation the received information is displayed in the application.
+
 <img src="https://github.com/jetspiking/OpenSystemQuery/blob/main/Images/OpenSystemQueryConcept.png?raw=true" width="300">
 <img src="https://github.com/jetspiking/OpenSystemQuery/blob/main/Images/OpenSystemQueryLoading.png?raw=true" width="300">
 
