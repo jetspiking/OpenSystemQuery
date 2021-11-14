@@ -20,7 +20,9 @@ Download and launch the executable "OpenSystemQuery.exe". The program is portabl
 - Windows
 
 # Information
-Currently the application is only provided as a concept version. The application is still being developed, the entire user interface and corresponding code will be rewritten in the future. Currently design patterns are not followed, therefor the code quality   
+Currently the application is only provided as a concept version. The application is still being developed, the entire user interface and corresponding code will be rewritten in the future. Currently design patterns are not followed, the code quality for the user interface is currently not up to standards.
+
+The application can be used as a reference on how to use the Windows Management Instrumentation for different purposes.
 
 # Contributing
 Bugs can be reported by opening issues. Ideas to include specific information can also be discussed by opening an issue. 
