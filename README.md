@@ -14,7 +14,7 @@ Open System Query is a program which utilizes the Windows Management Instrumenta
 # Usage
 Download and launch the executable "OpenSystemQuery.exe". The program is portable.
 
-[Releases](https://github.com/jetspiking/OpenSystemQuery)
+[Releases](https://github.com/jetspiking/OpenSystemQuery/releases)
 
 # Requirements
 - Windows
