@@ -2,9 +2,9 @@
 [![License](https://img.shields.io/github/license/jetspiking/OpenSystemQuery.svg)]()
 [![Stars](https://img.shields.io/github/stars/jetspiking/OpenSystemQuery.svg)]()
 
-# Open System Query (OSQ)
-Inspect your (Windows) system and view specifications and sensor data.
+
 <img src="https://github.com/jetspiking/OpenSystemQuery/blob/main/Images/OpenSystemQuery.png?raw=true">
+Inspect your (Windows) system and view specifications and sensor data.
 
 # Description
 Open System Query is a program which utilizes the Windows Management Instrumentation to retrieve system information.  
