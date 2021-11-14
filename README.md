@@ -1,4 +1,4 @@
-[![Github All Releases](https://img.shields.io/github/downloads/jetspiking/OpenSystemQuery/total.svg)]()
+<!-- [![Github All Releases](https://img.shields.io/github/downloads/jetspiking/OpenSystemQuery/total.svg)]() -->
 [![License](https://img.shields.io/github/license/jetspiking/OpenSystemQuery.svg)]()
 [![Stars](https://img.shields.io/github/stars/jetspiking/OpenSystemQuery.svg)]()
 
