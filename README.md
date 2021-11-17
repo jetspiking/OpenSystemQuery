@@ -27,8 +27,8 @@ The application can be used as a reference on how to use the Windows Management 
 # Overview
 After querying the Windows Management Instrumentation the received information is displayed in the application.
 
-<img src="https://github.com/jetspiking/OpenSystemQuery/blob/main/Images/OpenSystemQueryConcept.png?raw=true" width="350">
-<img src="https://github.com/jetspiking/OpenSystemQuery/blob/main/Images/OpenSystemQueryLoading.png?raw=true" width="350">
+<img src="https://github.com/jetspiking/OpenSystemQuery/blob/main/Images/OpenSystemQueryConcept.png?raw=true" >
+<img src="https://github.com/jetspiking/OpenSystemQuery/blob/main/Images/OpenSystemQueryLoading.png?raw=true" >
 
 # Contributing
 Bugs can be reported by opening issues. Ideas to include specific information can also be discussed by opening an issue. 
