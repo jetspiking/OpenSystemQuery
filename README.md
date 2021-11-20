@@ -36,4 +36,6 @@ Bugs can be reported by opening issues. Ideas to include specific information ca
 # Thank you for using OSQ
 If you enjoy Open System Query and feel like it's improving your productivity and you want to support me extra, you could consider buying me a drink by navigating to my Buy Me A Coffee account.
 
+<a href="https://www.buymeacoffee.com/DustinHendriks" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
 <img src="https://github.com/jetspiking/OpenSystemQuery/blob/main/Images/PNG1.png?raw=true">
