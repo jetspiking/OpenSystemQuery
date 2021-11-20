@@ -31,7 +31,7 @@ After querying the Windows Management Instrumentation the received information i
 <img src="https://github.com/jetspiking/OpenSystemQuery/blob/main/Images/OpenSystemQueryLoading.png?raw=true" >
 
 # Contributing
-Bugs can be reported by opening issues. Ideas to include specific information can also be discussed by opening an issue. 
+Bugs can be reported by opening issues. Ideas to include specific information can also be discussed by opening an issue. Thank you for contributing!
 
 # Thank you for using OSQ
 If you enjoy Open System Query and feel like it's improving your productivity and you want to support me extra, you could consider buying me a drink by navigating to my Buy Me A Coffee account.
